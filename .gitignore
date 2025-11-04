@@ -1,0 +1,43 @@
+--- .gitignore ---
+
+Ignore common Python files
+
+Byte-code
+
+pycache/
+*.py[cod]
+*$py.class
+
+Data files
+
+We version-control the dummy data, but you might want to
+
+ignore large user-provided data files.
+
+data/*.csv
+
+data/*.txt
+
+Engineered features (can be regenerated)
+
+*.csv
+engineered_features.csv
+engineered_features_test.csv
+
+Saved models (binary files)
+
+models/
+*.joblib
+*.pth
+
+Reports (generated artifacts)
+
+reports/
+*.png
+
+Virtual environment
+
+venv/
+.venv/
+env/
+.early.coverage
